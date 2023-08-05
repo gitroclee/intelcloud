@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 MAINTAINER "roclee"
 ENV MYPATH /usr/local
 WORKDIR $MYPATH

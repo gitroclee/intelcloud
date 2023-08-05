@@ -9,7 +9,9 @@ RUN apt update
 RUN apt install-y build-essential
 RUN apt install-y net-tools
 RUN apt install-y curl
-RUN apt install -y sudoRUN apt install -y systemctlRUN curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 
+RUN apt install -y sudo
+RUN apt install -y systemctl
+RUN curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 
 RUN apt-get install -y software-properties-common
 RUN sudo add-apt-repository \
 "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
